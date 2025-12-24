@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mood Based Music App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Mood Based Music Suggestion 🎧</h1>
+
+    <label for="mood">Select your mood:</label>
+    <select id="mood" onchange="showMusic()">
+      <option value="">-- Choose Mood --</option>
+      <option value="happy">Happy 😊</option>
+      <option value="sad">Sad 😔</option>
+      <option value="energetic">Energetic ⚡</option>
+      <option value="relaxed">Relaxed 😌</option>
+    </select>
+
+    <div id="playlist"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
